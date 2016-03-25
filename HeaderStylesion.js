@@ -7,6 +7,7 @@ window.HeaderStylesion = function(slct){
     var lines = text.trim().split("\n");
     var table = document.createElement("table");
     table.style.fontFamily= 'Consolas, "Liberation Mono", Menlo, Courier, monospace';
+    table.style.borderSpacing= '1px';
     lines.some(function(it){
         var _tr = document.createElement("tr");
         var _key = it.substr(0,it.indexOf(":")).trim();
